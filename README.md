@@ -12,7 +12,7 @@ And then pass Longdo Map object and KML string as parameter, like so:
 ```javascript
 let overlays = kmlToLongdoMap(MAP_OBJECT, 'KML_STRING')
 ```
-Finally, `kmlToLongdoMap` function will return all of Longdo Map overlays as in KML back, so you might use it later.
+Finally, `kmlToLongdoMap` function will add Longdo Map overlay into your Longdo Map and return all of them as an object back, so you might use it later.
 
 ## Function parameters
 kmlToLongdoMap(`MAP_OBJECT`, `'KML_STRING'`, `OPTIONS`)
