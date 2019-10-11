@@ -16,8 +16,8 @@ Finally, `kmlToLongdoMap` function will return all of Longdo Map overlays as in 
 
 ## Function parameters
 kmlToLongdoMap(`MAP_OBJECT`, `'KML_STRING'`, `OPTIONS`)
-* `MAP_OBJECT`:`object`*(require)* Longdo Map object
-* `KML_STRING`:`string`*(require)* KML string
+* `MAP_OBJECT`:`object`*(required)* Longdo Map object
+* `KML_STRING`:`string`*(required)* KML string
 * `OPTIONS`:`object`*(optional)* an object for overriding Longdo Map overlay, properties below:
 >* markerOptions: [MarkerOptions](http://api.longdo.com/map/doc/content/#MarkerOptions)
 >* geometryOptions: [GeometryOptions](http://api.longdo.com/map/doc/content/#GeometryOptions)
