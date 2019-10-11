@@ -14,6 +14,8 @@ let overlays = kmlToLongdoMap(MAP_OBJECT, 'KML_STRING')
 ```
 Finally, `kmlToLongdoMap` function will add Longdo Map overlay as in your KML into your Longdo Map and return everything back as an object, so you might use it later.
 
+See the `/examples` directory for more examples.
+
 ## Function parameters
 kmlToLongdoMap(`MAP_OBJECT`, `'KML_STRING'`, `OPTIONS`)
 * `MAP_OBJECT`:`object`*(required)* Longdo Map object
