@@ -1,5 +1,5 @@
 /**
-* This method is use for importing KML into Longdo Map.
+* This method is used to import KML into Longdo Map.
 *
 * @method kmlToLongdoMap
 * @param {Object} map A Longdo Map object
