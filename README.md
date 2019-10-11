@@ -1,2 +1,27 @@
 # kml-longdomap.js
 A Javascript library for importing KML into Longdo Map.
+
+## Quick start
+First, you'll need to include `kml-longdomap.js` and `togeojson.js` into your project.
+
+```html
+<script src="togeojson.js"></script>
+<script src="kml-longdomap.js"></script>
+```
+And then pass Longdo Map object and KML string as parameter, like so:
+```javascript
+let overlays = kmlToLongdoMap(MAP_OBJECT, 'KML_STRING')
+```
+Finally, `kmlToLongdoMap` function will return all of Longdo Map overlays as in KML back, so you might use it later.
+
+## Function parameters
+kmlToLongdoMap(`MAP_OBJECT`, `'KML_STRING'`, `OPTIONS`)
+* `MAP_OBJECT`:`object`*(require)* Longdo Map object
+* `KML_STRING`:`string`*(require)* KML string
+* `OPTIONS`:`object`*(optional)* an object for overriding Longdo Map overlay, properties below:
+>* markerOptions: [MarkerOptions](http://api.longdo.com/map/doc/content/#MarkerOptions)
+>* geometryOptions: [GeometryOptions](http://api.longdo.com/map/doc/content/#GeometryOptions)
+
+## References
+* [How to import KML into Longdo Map](https://map.longdo.com/docs/javascript/kml)
+* [Longdo Map API](https://map.longdo.com/docs/javascript/getting-started)
