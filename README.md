@@ -24,6 +24,8 @@ kmlToLongdoMap(`MAP_OBJECT`, `'KML_STRING'`, `OPTIONS`)
 >* markerOptions: [MarkerOptions](http://api.longdo.com/map/doc/content/#MarkerOptions)
 >* geometryOptions: [GeometryOptions](http://api.longdo.com/map/doc/content/#GeometryOptions)
 
-## References
+## Demo
 * [How to import KML into Longdo Map](https://map.longdo.com/docs/javascript/kml)
+
+## References
 * [Longdo Map API](https://map.longdo.com/docs/javascript/getting-started)
