@@ -163,8 +163,8 @@ let kmlToLongdoMap = function (map, kml, options = {}) {
               detail: props.description,
               ...options.markerOptions
             })
-        let temp = map.Overlays.add(marker)
-        resultOverlays.Marker.push(temp)
+        map.Overlays.add(marker)
+        resultOverlays.Marker.push(marker)
         allLon.push(pos[0])
         allLat.push(pos[1])
     }
@@ -204,13 +204,13 @@ let kmlToLongdoMap = function (map, kml, options = {}) {
             }
             if (!isDonut) {
                 let geom = new longdo.Polygon(locationList, info)
-                let temp = map.Overlays.add(geom)
-                resultOverlays.Polygon.push(temp)
+                map.Overlays.add(geom)
+                resultOverlays.Polygon.push(geom)
             } else if (isDonut && count === 1) {
                 locationList = setDonutGeomData(locationList)
                 let geom = new longdo.Polygon(locationList, info)
-                let temp = map.Overlays.add(geom)
-                resultOverlays.Polygon.push(temp)
+                map.Overlays.add(geom)
+                resultOverlays.Polygon.push(geom)
             }
             count++
         }
@@ -238,8 +238,8 @@ let kmlToLongdoMap = function (map, kml, options = {}) {
             allLat.push(lat)
         }
         let geom = new longdo.Polyline(locationList, info)
-        let temp = map.Overlays.add(geom)
-        resultOverlays.Polyline.push(temp)
+        map.Overlays.add(geom)
+        resultOverlays.Polyline.push(geom)
     }
 
     function setRgbaColor (colorObj, a = 1) {
